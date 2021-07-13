@@ -1,0 +1,37 @@
+<p>calculator works!</p>
+<div class="container">
+  <div class="card" style="width: 30%">
+    <table style="width: 100%">
+      <tr>
+        <th colspan="4"><input class="form-control" style="width: 100%" type="text" [(ngModel)]="calculator.value" >{{ getResult() }}</th>
+      </tr>
+      <tr>
+        <th colspan="4"><button type="button" class="btn btn-outline-danger" (click)="clear()">Clear</button></th>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('1')">1</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('2')">2</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('3')">3</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('X')">X</button></th>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('4')">4</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('5')">5</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('6')">6</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('/')">/</button></th>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('7')">7</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('8')">8</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('9')">9</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('+')">+</button></th>
+      </tr>
+      <tr>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('.')">.</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('0')">0</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="getResult()">=</button></th>
+        <th><button type="button" class="btn btn-outline-info" (click)="pressKey('-')">-</button></th>
+      </tr>
+    </table>
+  </div>
+</div>
